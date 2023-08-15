@@ -1,0 +1,98 @@
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    height: 35px;
+}
+body {
+    margin: 60px auto;
+    width: 70%;
+}
+nav ul {
+    font-family:'Roboto', sans-serif;
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: underline;
+    color: blue;
+}
+h1 {
+    font-size: 2em;
+    font-family:'Roboto', sans-serif;
+    color: #000000d0;
+}
+/* div li {
+    margin: 20px;
+} */
+li {
+    font-size: 1.5em;
+    font-family:'Roboto', sans-serif;
+    line-height: 1.4em;
+    color: #000000d0;
+}
+p {
+    font-size: 1.5em;
+    font-family:'Roboto', sans-serif;
+    line-height: 1.4em;
+    color: #000000d0;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+.timeline-item {
+    padding: 2em 2em 2em;
+    position: relative;
+    color: rgba(0, 0, 0, .7);
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+.timeline-item p {
+    font-size: 1rem;
+}
+.timeline-item::before {
+    content: attr(date-is);
+    position: absolute;
+    left: 1.7em;
+    font-weight: bold;
+    top: 0.7em;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.timeline-item::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -8px;
+    border-radius: 10px;
+    content: '';
+    border: 2px solid rgba(0, 0, 0, .3);
+    background: white;
+}
+hr {
+    display: flex;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-top: 1.7px solid rgba(0, 0, 0, .3); */
+    font-size: .8em;
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    height: 5em;
+}
