@@ -1,132 +1,175 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="icon" href="/css/te.png"/>
-		<title>Abdulloh Nidhom</title>
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<header>
-    		<ul class="menu"></ul>
-		</header>
-		<div class="container">
-    		<div>
-				<p>I'm Abdulloh. My interests lie at the intersection of technology and science, and I love to build things 
-					especially related to technology. I believe that the intersection of these domains holds the key to 
-					unlocking humanity's greatest potential. I am excited to connect with others who share 
-					my interests, so let's talk and see where our ideas take us! But before that let me share my journey lately.
-				</p>
-    		</div>
-			<div class="timeline-item" date-is='2022 - 2023'>
-				<h1>Research Associate</h1>
-				<h2><i>Cognitive Artificial Intelligence Research Group</i></h2>
+<html lang="en">
 
-			</div>
-			<div class="timeline-item" date-is='2022 - 2022'>
-				<h1>Head of Group</h1>
-				<h2><i>Indosat Ooredo Hutchison FAST (Future Academy Skill Transformation) Batch-1</i></h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/css/te.png" />
+    <title>Abdulloh</title>
+    <link rel="stylesheet">
+    <style>
+        body {
+            margin: 60px auto;
+            width: 70%;
+            font-family: 'Roboto', sans-serif;
+            color: #000000d0;
+        }
 
-			</div>
-			<div class="timeline-item" date-is='2021 - 2021'>
-				<h1>Software Engineering Intern</h1>
-				<h2><i>Department of Communication and Information of Malang Regency</i></h2>
+        /* Navigation */
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            height: 35px;
+        }
 
-			</div>
-			<div class="timeline-item" date-is='2018 - 2022'>
-				<h1>Bachelor of Applied Computer</h1>
-				<h2><i>State Polytechnic of Malang</i></h2>
+        nav ul {
+            padding: 0;
+            list-style: none;
+            font-weight: bold;
+        }
 
-			</div>
-		</div>
-		<div>
-			<p></p>
-		</div>
-		<hr></hr>
-		<div>
-			<h1>Selected Projects</h1>
-			<li><a href="https://github.com/abdullohndm/UAV_Identifier">UAVIdentifier</a> is built using Python (TensorFlow and Scikit-Learn to train the model) and Flask. Using machine learning, this app is primarily focus on predicting what is the closest UAV that being inputted by voice.</li>
-			<li><a href="https://github.com/abdullohndm/Projek_3_Web_Coffee">Kopiku</a> basically a website using Codeigniter 3 for coffee management systems to help coffee owner's manage their daily use using this website. What's unique of this app is their UX because it's simplicity that made user easier to manage. </li>
-			<li><a href="https://github.com/abdullohndm/kasku">Kasku</a> is a fintech project that allow user to manage their personal financial report such as tracking income and expense in their android phone.</li>
-			<li>When you think you think someone is so patient wait until you see them waiting for parking line -especially in Indonesia-, that's why me and my team integrating website and smartphone to make it as less time consuming as possible in <a href="https://github.com/AlifiaZaidaNurmaya/proyek/tree/master">ParkirAssistant</a>, you can use phone to book your parking before you even get there, so that you going to the place that supported the application seamlessly.</li>
-			<li><a href="https://github.com/abdullohndm/Mobile-3D-01/blob/gh-pages/docs/13_Projek/LAPORAN.md">HealthiestApp</a>, this Java-based application provides an easy-to-use tool for tracking important health and wellness metrics on a daily basis. Users can log in each day to document various indicators of their physical health state. </li>
-			<p></p>
-		</div>
-		<hr></hr>
-		<div class="pub">
-			<div class="pub-title">
-			<h1>Publication</h1>
-			<li><a href="https://www.sciencedirect.com/science/article/pii/S187705092400334X">An Artificial Intelligence-based Application for Recognizing and Identifying Aerial Objects based on Voice Input</a>. Seventh Information Systems International Conference (ISICO 2023).</li>
-			<li>This one is written in Bahasa Indonesia: <a href="https://publishing-widyagama.ac.id/ejournal-v2/index.php/bcti/article/view/4910">Implementasi Fusi Informasi dengan Naive Bayes Classifier untuk Pengenalan dan Identifikasi Pesawat Udara</a>. Book Chapter (2023) - Inovasi Teknologi Dalam Mendukung Pencapaian Sustainable Development Goals (SDGs).</li>
-			<p></p>
-			</div>
-		</div>
-		<hr></hr>
-		<div>
-			<h1>Prizes and Awards</h1>
-			<li>Runner Up in State Polytechnic of Malang English Competition 2019.</li>
-			<li>Selected to participate in the Competition Selection Online Program Millennials Entrepreneur Summit
-				Singapore or Malaysia 2019.</li>
-			<p></p>
-		</div>
-		<hr></hr>
-		<div>
-			<h1>Interesting Links</h1>
-			<li><a href="https://bitcoinmagazine.com/business/opinion-on-mining-1403298609">Opinion on Mining</a>, An examination of the obstacles Bitcoin miners are facing today.</li>
-			<li><a href="https://blog.samaltman.com/how-to-be-successful">How to be Successful</a>, nicely written by Sam Altman about achieving something big.</li>
-			<li>Compilations of great (imo, but really) technical papers on advances in AI: 
-			<a href="https://research.nvidia.com/labs/dir/neuralangelo/">neuralangelo</a>, 
-			<a href="https://arxiv.org/pdf/2005.14165.pdf">GPT</a>, 
-			<a href="https://arxiv.org/pdf/2303.17564v1.pdf">BloombergGPT</a>, 
-			<a href="https://palm-e.github.io/">PaLM-E</a>, 
-			<a href="https://arxiv.org/pdf/1706.03762.pdf">Attention is All You Need</a>, 
-			<!-- <a href="https://arxiv.org/pdf/2307.10169.pdf">Challenges and Applications of LLMs</a>,
-			<a href="https://arxiv.org/pdf/2209.00099.pdf">Efficient Methods for NLP: A Survey</a>, 
-			<a href="https://arxiv.org/pdf/2308.07921.pdf">Solving Math Word Problems Using GPT-4 Code Interpreter With Code-Based Self-Verification</a>, 
-			<a href="https://arxiv.org/pdf/1910.10683.pdf">Limits of Transfer Learning with a Unified Text-to-Text Transformer</a>, 
-			<a href="https://arxiv.org/pdf/2304.06488.pdf">ChatGPT in AIGC Era</a>, 
-			<a href="https://arxiv.org/pdf/2206.00240.pdf">How does Dataset Condensation Help Privacy?</a>, 
-			<a href="https://arxiv.org/pdf/2206.12374.pdf">Affective Signals in a Social Media Recommender System</a>, 
-			<a href="https://nvlabs.github.io/instant-ngp/assets/mueller2022instant.pdf">Instant Neural Graphics Primitives with a Multiresolution Hash Encoding</a>, 
-			<a href="https://arxiv.org/pdf/2212.04356.pdf">Robust Speech Recognition via Large-Scale Weak Supervision</a>,
-			<a href="https://arxiv.org/pdf/2102.12092.pdf">Zero-Shot</a>,  -->
-			<a href="https://arxiv.org/pdf/2112.10752v2.pdf">Latent Diffusion Models</a>, 
-			<a href="https://arxiv.org/pdf/2201.08239.pdf">LaMDA</a>,
-			<a href="https://arxiv.org/pdf/2204.06125.pdf">CLIP Latents</a>,
-			<a href="https://storage.googleapis.com/deepmind-media/A%20Generalist%20Agent/Generalist%20Agent.pdf">GATO</a>, 
-			<a href="https://arxiv.org/pdf/2205.11728.pdf">ItemSage</a>, 
-			<a href="https://openreview.net/pdf?id=BZ5a1r-kVsf">Autonomous Machine Intelligence</a>, 
-			<a href="https://arxiv.org/pdf/2209.14988.pdf">DreamFusion</a>, 
-			<a href="https://arxiv.org/pdf/2212.09748.pdf">DiT</a>, 
-			<a href="https://openreview.net/pdf?id=b-ny3x071E5">Meta-Learning</a>, 
-			<a href="https://arxiv.org/pdf/2303.17580.pdf">HuggingGPT</a>, 
-			<a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Piergiovanni_4D-Net_for_Learned_Multi-Modal_Alignment_ICCV_2021_paper.pdf">4D-Net</a>, 
-			<a href="https://arxiv.org/pdf/1810.04805.pdf">BERT</a>, 
-			<a href="https://arxiv.org/pdf/2301.02111.pdf">VALL-E</a>, 
-			<a href="https://arxiv.org/pdf/2302.13971.pdf">LLaMA</a>.
-			</li>
-			<li>"There is no such thing as perfection that is built by humans." <a href="https://citizenlab.ca/2018/09/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/">Pegassus-Spyware</a> is a great article that is trying to tell us that when we used to think some software had perfect security systems, we were actually mistaken. (some people)</li>
-			<li><a href="https://blog.bytebytego.com/p/understanding-database-types">The Art of Database</a>, Database concepts that can be absorbed easily.</li>
-			<li><a href="https://www.feynmanlectures.caltech.edu/I_toc.html">Volume I</a>, 
-				<a href="https://www.feynmanlectures.caltech.edu/II_toc.html">Volume II</a>, 
-				<a href="https://www.feynmanlectures.caltech.edu/III_toc.html">Volume III</a>, 
-			The Feynman Lectures on Physics.</li>
-			<li><a href="https://huggingface.co/docs/transformers/index">HuggingFace docs</a>, Everything you ever wanted to know about Transformers.</li>
-			<li>This <a href="https://platform.openai.com/docs/guides/prompt-engineering/strategy-give-models-time-to-think">Prompt Engineering Guidelines</a> is essential for those who wants to use chatbot better.</li>
-			<p></p>
-		</div>
-		<hr></hr>
-		<div>
-			<h1>Contact</h1>
-			<p>
-				<a href="https://abdullohndm.blogspot.com/">Blog</a> <span>&#183;</span>
-				<a href="mailto:abdullohnidhom@hotmail.com">Email</a> <span>&#183;</span>
-				<a href="https://twitter.com/abdullohndm">X</a> <span>&#183;</span>
-				<a href="https://linkedin.com/in/abdullohnidhom">Linkedin</a> <span>&#183;</span>
-        		<a href="https://github.com/abdullohndm">Github</a>
-			</p>
-		</div>
-		<footer>
-			
-		</footer>
-	</body>
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            transition: color 0.2s, text-decoration 0.2s;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 1.2em;
+            color: #333;
+            margin: 0.1cm 0;
+        }
+
+        h2 {
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        p, li {
+            font-size: 0.8em;
+            line-height: 1.2em;
+        }
+
+        /* Layout fixes */
+        .container {
+            margin: 20px 0;
+        }
+
+        .pub-title h1,
+        .links h1 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: .8em;
+            font-weight: bold;
+            height: 5em;
+        }
+
+        ul.posts {
+            margin: 20px auto 40px;
+            font-size: 1.0em;
+        }
+
+        ul.posts li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        /* Make list items smaller in specific sections */
+        .pub ul li, .prizes ul li, .links ul li {
+            font-size: 0.8em;
+        }
+
+        /* Hover and Active states */
+        a:hover,
+        a:focus {
+            color: rgb(35, 134, 255);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(35, 134, 255);
+            text-decoration: underline;
+        }
+
+        .pub a:hover,
+        .links a:hover {
+            color: rgb(35, 134, 255);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <ul class="menu">
+        </ul>
+    </header>
+
+    <section class="container">
+        <p>
+            I am Abdulloh and this is my personal website. I am a researcher and engineer, 
+            and I graduated from the State Polytechnic of Malang. My research interests are in machine 
+            learning and natural language processing. I love building things and am particularly 
+            interested in creating awesome software products. If we share similar interests, 
+            feel free to reach out. Who knows we might create something that benefits society.
+        </p>
+    </section>
+
+    <section class="pub">
+        <div class="pub-title">
+            <h1>Publications</h1>
+            <ul>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S187705092400334X">An Artificial Intelligence-based Application for Recognizing and Identifying Aerial Objects based on Voice Input</a>. Seventh Information Systems International Conference (ISICO 2023).</li>
+                <li>This one is written in Bahasa Indonesia: <a href="https://publishing-widyagama.ac.id/ejournal-v2/index.php/bcti/article/view/4910">Implementasi Fusi Informasi dengan Naive Bayes Classifier untuk Pengenalan dan Identifikasi Pesawat Udara</a>. Book Chapter (2023) - Inovasi Teknologi Dalam Mendukung Pencapaian Sustainable Development Goals (SDGs).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="links">
+        <h1>Interesting Links</h1>
+        <ul>
+            <li><a href="https://bitcoinmagazine.com/business/opinion-on-mining-1403298609">Opinion on Mining</a>, An examination of the obstacles Bitcoin miners are facing today.</li>
+            <li><a href="https://blog.samaltman.com/how-to-be-successful">How to be Successful</a>, nicely written by Sam Altman about achieving something big.</li>
+            <li>Compilations of great (imo, but really) technical papers on advances in AI:
+                <a href="https://research.nvidia.com/labs/dir/neuralangelo/">neuralangelo</a>,
+                <a href="https://arxiv.org/pdf/2005.14165.pdf">GPT</a>,
+                <a href="https://arxiv.org/pdf/2303.17564v1.pdf">BloombergGPT</a>,
+                <a href="https://palm-e.github.io/">PaLM-E</a>,
+                <a href="https://arxiv.org/pdf/1706.03762.pdf">Attention is All You Need</a>.
+            </li>
+            <li><a href="https://citizenlab.ca/2018/09/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/">Pegassus-Spyware</a> is a great article about software vulnerabilities.</li>
+            <li><a href="https://blog.bytebytego.com/p/understanding-database-types">The Art of Database</a>, Database concepts explained easily.</li>
+            <li><a href="https://www.feynmanlectures.caltech.edu/I_toc.html">Volume I</a>,
+                <a href="https://www.feynmanlectures.caltech.edu/II_toc.html">Volume II</a>,
+                <a href="https://www.feynmanlectures.caltech.edu/III_toc.html">Volume III</a>, 
+                The Feynman Lectures on Physics.
+            </li>
+        </ul>
+    </section>
+
+    <section class="footer-links">
+        <h1>Links</h1>
+        <p>
+            <a href="https://abdullohsproject1point0.netlify.app/">Projects</a> <span>&#183;</span>
+            <a href="https://abdullohndm.blogspot.com/">Blog</a> <span>&#183;</span>
+            <a href="mailto:abdullohnidhom@hotmail.com">Email</a> <span>&#183;</span>
+            <a href="https://scholar.google.com/citations?user=5gDBg0wAAAAJ&hl=en">Scholar</a> <span>&#183;</span>
+            <a href="https://linkedin.com/in/abdullohnidhom">Linkedin</a>
+        </p>
+    </section>
+</body>
 </html>
